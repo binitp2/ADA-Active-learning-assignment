@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced String Matching Visualizer</title>
+  <link rel="stylesheet" href="finalstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>String Matching Algorithm Visualizer</h1>
+    <label for="inputString">Enter the string: </label>
+    <input type="text" id="inputString" placeholder="Enter your string" />
+    <label for="patternString">Enter the pattern to search: </label>
+    <input type="text" id="patternString" placeholder="Enter the pattern" />
+    <div class="buttons">
+      <button id="naiveButton">Visualize Naive Algorithm</button>
+      <button id="rabinKarpButton">Visualize Rabin-Karp Algorithm</button>
+      <button id="resetButton">Reset</button>
+    </div>
+    <div id="visualizer" class="visualizer"></div>
+    <div id="hashDisplay" class="hash-box"></div>
+    <p id="resultMessage"></p>
+  </div>
+  <script src="finalscript.js"></script>
+  <script src="rabin-karp.js"></script>
+</body>
+</html>
